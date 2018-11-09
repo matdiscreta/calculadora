@@ -1,25 +1,15 @@
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class Calculadora {
-    static JTextField result = new JTextField();
+    private static JTextField result = new JTextField();
 
     public static void main(String[] ars){
         calcular();
     }
 
-    public static class Calc{
-        float atual = 0, anterior = 0;
-        char operacao;
-        double i = 0.1;
-        boolean virgula = false;
-    }
-
-    public static void calcular(){
-        Calc c = new Calc();
+    private static void calcular(){
 
         JFrame janela = new JFrame("Calculadora");
         janela.setBounds(100, 100, 650, 440);
