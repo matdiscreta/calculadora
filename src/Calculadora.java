@@ -12,8 +12,7 @@ public class Calculadora {
     private static void calcular(){
 
         JFrame janela = new JFrame("Calculadora");
-        janela.setBounds(100, 100, 650, 440);
-        janela.setLayout(new GridLayout(2, 1));
+        janela.setBounds(100, 100, 532, 300);
         janela.setBackground(Color.LIGHT_GRAY);
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -22,13 +21,12 @@ public class Calculadora {
         janela.add(resultado, BorderLayout.NORTH);
 
         result.setHorizontalAlignment(JTextField.RIGHT);
-        result.setColumns(9);
+        result.setColumns(15);
         result.setBorder(new LineBorder(Color.BLACK, 2, true));
         result.setBackground(Color.BLACK);
         result.setForeground(Color.LIGHT_GRAY);
         result.setEditable(false);
         result.setFont(new Font("Tahoma", Font.PLAIN, 40));
-        result.setText("Teste");
         resultado.add(result);
 
         JPanel botoes = new JPanel();
