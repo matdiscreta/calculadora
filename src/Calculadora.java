@@ -23,7 +23,7 @@ public class Calculadora {
 
         JFrame janela = new JFrame("Calculadora");
         janela.setBounds(100, 100, 650, 440);
-        janela.setLayout(new GridLayout(2, 2));
+        janela.setLayout(new GridLayout(2, 1));
         janela.setBackground(Color.LIGHT_GRAY);
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -38,6 +38,7 @@ public class Calculadora {
         result.setForeground(Color.LIGHT_GRAY);
         result.setEditable(false);
         result.setFont(new Font("Tahoma", Font.PLAIN, 40));
+        result.setText("Teste");
         resultado.add(result);
 
         JPanel botoes = new JPanel();
