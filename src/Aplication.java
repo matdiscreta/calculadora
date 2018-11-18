@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class Aplication {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+    	Calculadora calculator = new Calculadora();
+/*        Scanner sc = new Scanner(System.in);
         int a, b, c, r;
 
         do {
@@ -53,7 +54,7 @@ public class Aplication {
                     break;
             }
             System.out.println("\n");
-        }while (r >= 1 && r <= 6);
+        }while (r >= 1 && r <= 6);*/
     }
 
     public static int fatorial(int a){
